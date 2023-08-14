@@ -7,9 +7,9 @@ return {
 			"nvim-telescope/telescope-fzf-native.nvim",
 			build = "make",
 		},
-		{
-			'ThePrimeagen/git-worktree.nvim',
-		}
+		-- {
+		-- 	'ThePrimeagen/git-worktree.nvim',
+		-- }
 	},
 	keys = {
 		{ "<leader>ff", "<cmd>Telescope find_files<CR>",                desc = "Find Files" },
@@ -38,7 +38,7 @@ return {
 	},
 	config = function()
 		require("telescope").load_extension("fzf")
-		require("telescope").load_extension("git_worktree")
+		-- require("telescope").load_extension("git_worktree")
 
 		require('telescope').setup {
 			defaults = {
