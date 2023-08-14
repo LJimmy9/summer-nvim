@@ -14,4 +14,17 @@ vim.keymap.set("n", "<leader>k", ":wincmd k<CR>", { noremap = true })
 vim.keymap.set("n", "<leader>j", ":wincmd j<CR>", { noremap = true })
 vim.keymap.set("n", "<leader>x", ":wincmd q<CR>", { noremap = true })
 
-vim.keymap.set("n", "<leader>er", vim.cmd.Ex, { silent = true })
+vim.keymap.set("n", "<leader>er", vim.cmd.Ex, { silent = true, desc = "Open explorer" })
+
+vim.keymap.set("n", "<leader>w", function()
+	vim.lsp.buf.format()
+	vim.cmd("update")
+end)
+
+
+vim.keymap.set("n", "<leader>gg", function()
+	vim.cmd(":lua require('telescope').extensions.git_worktree.git_worktrees()")
+end)
+vim.keymap.set("n", "<leader>ga", function()
+	vim.cmd(":lua require('telescope').extensions.git_worktree.create_git_worktree()")
+end)

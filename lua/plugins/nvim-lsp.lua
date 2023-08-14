@@ -37,7 +37,6 @@ return {
 				vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, opts)
 				vim.keymap.set("n", "<leader>ls", vim.lsp.buf.signature_help, opts)
 				vim.keymap.set("n", "<leader>li", vim.cmd.LspInfo, opts)
-				vim.keymap.set("n", "<leader>w", vim.lsp.buf.format, opts)
 
 				-- Typescript specific settings
 				if client.name == "tsserver" then

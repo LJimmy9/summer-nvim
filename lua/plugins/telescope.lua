@@ -7,14 +7,17 @@ return {
 			"nvim-telescope/telescope-fzf-native.nvim",
 			build = "make",
 		},
+		{
+			'ThePrimeagen/git-worktree.nvim',
+		}
 	},
 	keys = {
 		{ "<leader>ff", "<cmd>Telescope find_files<CR>",                desc = "Find Files" },
 		{ "<leader>ft", "<cmd>Telescope live_grep<CR>",                 desc = "Find a string" },
 		{ "<leader>fb", "<cmd>Telescope buffers<CR>",                   desc = "Find buffers" },
-		{ "<leader>fh", "<cmd>Telescope help_tags<CR>",                 desc = "Help" },
+		-- { "<leader>fh", "<cmd>Telescope help_tags<CR>",                 desc = "Help" },
 		{ "<leader>fk", "<cmd>Telescope keymaps<CR>",                   desc = "Find keymaps" },
-		{ "<leader>fg", "<cmd>Telescope git_files<CR>",                 desc = "Find Git Files" },
+		-- { "<leader>fg", "<cmd>Telescope git_files<CR>",                 desc = "Find Git Files" },
 		{ "<leader>fj", "<cmd>Telescope current_buffer_fuzzy_find<CR>", desc = "Fuzzy find" },
 	},
 	opts = {
@@ -35,6 +38,8 @@ return {
 	},
 	config = function()
 		require("telescope").load_extension("fzf")
+		require("telescope").load_extension("git_worktree")
+
 		require('telescope').setup {
 			defaults = {
 				mappings = {
