@@ -22,5 +22,4 @@ vim.opt.updatetime = 300                               -- faster completion (400
 vim.opt.laststatus = 0                                 -- disables the status line
 
 
-vim.opt.autochdir = true
 
