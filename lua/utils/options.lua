@@ -21,3 +21,6 @@ vim.opt.iskeyword:append("-")                          -- treats words with `-` 
 vim.opt.updatetime = 300                               -- faster completion (4000ms default)
 vim.opt.laststatus = 0                                 -- disables the status line
 
+
+vim.opt.autochdir = true
+
