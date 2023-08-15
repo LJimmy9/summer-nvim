@@ -7,5 +7,4 @@ vim.cmd.colorscheme("everforest")
 -- vim.cmd("colorscheme kanagawa-dragon")
 -- vim.cmd("colorscheme kanagawa-lotus")
 
-
 require "utils.keymaps"

@@ -9,6 +9,7 @@ vim.opt.relativenumber = true
 vim.opt.tabstop = 2                                    -- insert 2 spaces for a tab
 vim.opt.shiftwidth = 2                                 -- the number of spaces inserted for each indentation
 vim.opt.smartindent = true                             -- make indenting smarter again
+vim.opt.expandtab = true
 vim.opt.smartcase = true                               -- smart case
 vim.opt.swapfile = false                               -- creates a swapfile
 

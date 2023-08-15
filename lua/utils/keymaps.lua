@@ -17,8 +17,8 @@ vim.keymap.set("n", "<leader>x", ":wincmd q<CR>", { noremap = true })
 vim.keymap.set("n", "<leader>er", vim.cmd.Ex, { silent = true, desc = "Open explorer" })
 
 vim.keymap.set("n", "<leader>w", function()
-	vim.lsp.buf.format()
-	vim.cmd("update")
+  vim.lsp.buf.format()
+  vim.cmd("update")
 end)
 
 
@@ -29,5 +29,9 @@ end)
 -- 	vim.cmd(":lua require('telescope').extensions.git_worktree.create_git_worktree()")
 -- end)
 vim.keymap.set("n", "<leader>gg", function()
-	vim.cmd(":LazyGitCurrentFile")
+  vim.cmd(":LazyGitCurrentFile")
+end)
+
+vim.keymap.set("n", "<leader>t", function()
+  vim.cmd(":TodoTelescope")
 end)
