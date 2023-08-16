@@ -40,7 +40,7 @@ return {
 
         -- Typescript specific settings
         if client.name == "tsserver" then
-          client.server_capabilities.documentFormattingProvider = true
+          client.server_capabilities.documentFormattingProvider = false
         end
 
         -- Eslint specific settings

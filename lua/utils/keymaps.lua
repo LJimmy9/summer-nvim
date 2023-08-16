@@ -32,6 +32,7 @@ vim.keymap.set("n", "<leader>gg", function()
   vim.cmd(":LazyGitCurrentFile")
 end)
 
+
 vim.keymap.set("n", "<leader>t", function()
-  vim.cmd(":TodoTelescope")
+  vim.cmd(":TodoTelescope keywords=FIX,TODO,HACK,WARN,PERF,NOTE,TEST")
 end)
