@@ -3,9 +3,7 @@ return {
   config = function()
     local ft = require('guard.filetype')
 
-    ft('lang'):fmt('lsp')
-        :append('prettier')
-    ft('typescript,javascript,typescriptreact'):fmt('prettier')
+    ft('typescript,javascript,typescriptreact,svelte'):fmt('prettier')
 
     -- :append('format-tool-2')
     -- :lint('lint-tool-1')

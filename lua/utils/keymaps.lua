@@ -18,7 +18,7 @@ vim.keymap.set("n", "<leader>er", vim.cmd.Ex, { silent = true, desc = "Open expl
 
 vim.keymap.set("n", "<leader>w", function()
   vim.lsp.buf.format()
-  vim.cmd("update")
+  vim.cmd("w")
 end)
 
 
